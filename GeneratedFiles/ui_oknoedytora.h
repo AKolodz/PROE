@@ -46,7 +46,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label_3;
     QLineEdit *lineEdit_5;
-    QLabel *label_2;
+    QLabel *wlaczanie_label;
     QHBoxLayout *horizontalLayout_6;
     QPushButton *zapisz;
     QPushButton *wczytaj;
@@ -57,11 +57,11 @@ public:
     QLabel *label;
     QListWidget *lista_app;
     QHBoxLayout *horizontalLayout_8;
-    QLineEdit *kategoria_app;
     QLineEdit *nazwa_app;
     QLineEdit *dev_app;
-    QLineEdit *pamiec_app;
+    QLineEdit *kategoria_app;
     QLineEdit *wersja_app;
+    QLineEdit *pamiec_app;
     QHBoxLayout *horizontalLayout_7;
     QPushButton *dodaj_app;
     QPushButton *usun_app;
@@ -70,7 +70,7 @@ public:
     {
         if (OknoEdytora->objectName().isEmpty())
             OknoEdytora->setObjectName(QStringLiteral("OknoEdytora"));
-        OknoEdytora->resize(930, 603);
+        OknoEdytora->resize(961, 600);
         gridLayout = new QGridLayout(OknoEdytora);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -166,11 +166,11 @@ public:
 
         verticalLayout_3->addLayout(verticalLayout_2);
 
-        label_2 = new QLabel(OknoEdytora);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setAlignment(Qt::AlignCenter);
+        wlaczanie_label = new QLabel(OknoEdytora);
+        wlaczanie_label->setObjectName(QStringLiteral("wlaczanie_label"));
+        wlaczanie_label->setAlignment(Qt::AlignCenter);
 
-        verticalLayout_3->addWidget(label_2);
+        verticalLayout_3->addWidget(wlaczanie_label);
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setSpacing(6);
@@ -226,11 +226,6 @@ public:
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setSpacing(6);
         horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        kategoria_app = new QLineEdit(OknoEdytora);
-        kategoria_app->setObjectName(QStringLiteral("kategoria_app"));
-
-        horizontalLayout_8->addWidget(kategoria_app);
-
         nazwa_app = new QLineEdit(OknoEdytora);
         nazwa_app->setObjectName(QStringLiteral("nazwa_app"));
 
@@ -241,15 +236,20 @@ public:
 
         horizontalLayout_8->addWidget(dev_app);
 
-        pamiec_app = new QLineEdit(OknoEdytora);
-        pamiec_app->setObjectName(QStringLiteral("pamiec_app"));
+        kategoria_app = new QLineEdit(OknoEdytora);
+        kategoria_app->setObjectName(QStringLiteral("kategoria_app"));
 
-        horizontalLayout_8->addWidget(pamiec_app);
+        horizontalLayout_8->addWidget(kategoria_app);
 
         wersja_app = new QLineEdit(OknoEdytora);
         wersja_app->setObjectName(QStringLiteral("wersja_app"));
 
         horizontalLayout_8->addWidget(wersja_app);
+
+        pamiec_app = new QLineEdit(OknoEdytora);
+        pamiec_app->setObjectName(QStringLiteral("pamiec_app"));
+
+        horizontalLayout_8->addWidget(pamiec_app);
 
 
         verticalLayout->addLayout(horizontalLayout_8);
@@ -282,6 +282,7 @@ public:
         QObject::connect(usun_app, SIGNAL(clicked()), OknoEdytora, SLOT(usunAplikacje()));
         QObject::connect(zapisz, SIGNAL(clicked()), OknoEdytora, SLOT(zapisz()));
         QObject::connect(wczytaj, SIGNAL(clicked()), OknoEdytora, SLOT(wczytaj()));
+        QObject::connect(wlacz, SIGNAL(clicked()), OknoEdytora, SLOT(wlacz()));
 
         QMetaObject::connectSlotsByName(OknoEdytora);
     } // setupUi
@@ -294,17 +295,17 @@ public:
         label_10->setText(QApplication::translate("OknoEdytora", "System operacyjny", Q_NULLPTR));
         label_8->setText(QApplication::translate("OknoEdytora", "Cena", Q_NULLPTR));
         label_3->setText(QApplication::translate("OknoEdytora", "Waga", Q_NULLPTR));
-        label_2->setText(QApplication::translate("OknoEdytora", "W\305\202\304\205czony?", Q_NULLPTR));
+        wlaczanie_label->setText(QApplication::translate("OknoEdytora", "W\305\202\304\205czony?", Q_NULLPTR));
         zapisz->setText(QApplication::translate("OknoEdytora", "Zapisz", Q_NULLPTR));
         wczytaj->setText(QApplication::translate("OknoEdytora", "Wczytaj", Q_NULLPTR));
         wlacz->setText(QApplication::translate("OknoEdytora", "W\305\202\304\205cz", Q_NULLPTR));
         wylacz->setText(QApplication::translate("OknoEdytora", "Wy\305\202\304\205cz", Q_NULLPTR));
         label->setText(QApplication::translate("OknoEdytora", "Zainstalowane Aplikacje", Q_NULLPTR));
-        kategoria_app->setText(QApplication::translate("OknoEdytora", "Kategoria", Q_NULLPTR));
         nazwa_app->setText(QApplication::translate("OknoEdytora", "Nazwa", Q_NULLPTR));
         dev_app->setText(QApplication::translate("OknoEdytora", "Deweloper", Q_NULLPTR));
-        pamiec_app->setText(QApplication::translate("OknoEdytora", "Pami\304\231\304\207 [B]", Q_NULLPTR));
+        kategoria_app->setText(QApplication::translate("OknoEdytora", "Kategoria", Q_NULLPTR));
         wersja_app->setText(QApplication::translate("OknoEdytora", "Wersja", Q_NULLPTR));
+        pamiec_app->setText(QApplication::translate("OknoEdytora", "Pami\304\231\304\207 [B]", Q_NULLPTR));
         dodaj_app->setText(QApplication::translate("OknoEdytora", "Dodaj", Q_NULLPTR));
         usun_app->setText(QApplication::translate("OknoEdytora", "Usu\305\204", Q_NULLPTR));
     } // retranslateUi

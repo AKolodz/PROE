@@ -2,7 +2,9 @@
 #include "Laptop.h"
 #include "Smartphone.h"
 #include "Phone.h"
-#include <qsignalmapper>
+#include "PhoneWrapper.h"
+#include "KomputerWrapper.h"
+#include "SmartphoneWrapper.h"
 
 WyborUrzadzen::WyborUrzadzen(QWidget *parent)
 	: QMainWindow(parent)
@@ -15,9 +17,14 @@ WyborUrzadzen::WyborUrzadzen(QWidget *parent)
 	Laptop* laptop=new Laptop();
 	Phone* phone=new Phone();
 	Smartphone* smartphone= new Smartphone();
-	listaUrzadzen.push_back(laptop);
-	listaUrzadzen.push_back(phone);
-	listaUrzadzen.push_back(smartphone);
+
+	PhoneWrapper* pWrapper = new PhoneWrapper(*phone);
+	KomputerWrapper* kWrapper = new KomputerWrapper(*laptop);
+	SmartphoneWrapper* sWrapper = new SmartphoneWrapper(*smartphone);
+
+	wraps.push_back(kWrapper);
+	wraps.push_back(pWrapper);
+	wraps.push_back(sWrapper);
 }
 
 WyborUrzadzen::~WyborUrzadzen()
@@ -33,16 +40,13 @@ void WyborUrzadzen::zamknij()
 void WyborUrzadzen::otworzEdytor()
 {
 	if (qobject_cast<QPushButton*>(sender()) == ui.Komputer) {
-		oknoEdytora = new OknoEdytora(*listaUrzadzen[0], this);
-		oknoEdytora->show();
+		wraps[0]->pokazEdytor(this);
 	}
 	else if (qobject_cast<QPushButton*>(sender()) == ui.Telefon) {
-		oknoEdytora = new OknoEdytora(*listaUrzadzen[1],this);
-		oknoEdytora->show();
+		wraps[1]->pokazEdytor(this);
 	}
 	else if (qobject_cast<QPushButton*>(sender()) == ui.Smartfon) {
-		oknoEdytora = new OknoEdytora(*listaUrzadzen[2], this);
-		oknoEdytora->show();
+		wraps[2]->pokazEdytor(this);
 	}
-
+	
 }

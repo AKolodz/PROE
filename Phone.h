@@ -8,8 +8,8 @@ class Phone : public MobileDevice {
 public:
 	Phone();									/**< Domyslny konstruktor klasy MobileDevice. Ustawia pola telefonu zgodnie z domyslnym konstruktorem klasy MobileDevice, a wektor vector<PhoneNumber> wypelnia 3 numerami alarmowymi: 997, 998, 999. */
 	~Phone();									/**< Destruktor klasy Phone*/
-	void turnOn();								/**< Metoda pozwalajaca na uruchomienie urzadzenia. */
-	void turnOff();								/**< Metoda pozwalajaca na wylaczenie urzadzenia. */
+	string turnOn();								/**< Metoda pozwalajaca na uruchomienie urzadzenia. */
+	string turnOff();								/**< Metoda pozwalajaca na wylaczenie urzadzenia. */
 	void runApplication(int appIndex);			/**< Metoda uruchamiajaca dzialanie aplikacji o numerze appIndex z wektora vector<App> listOfApps */
 	void installApplication(App & application); /**< Metoda pozwalajaca na dodanie do wektora vector<App> listOfApps aplikacji application */
 	void deleteApplication(int appIndex);		/**< Metoda pozwalajaca na usuniecie z wektora vector<App> listOfApps aplikacji o numerze appIndex */

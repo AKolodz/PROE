@@ -24,17 +24,29 @@ MobileDevice::~MobileDevice()
 #endif
 }
 
-void MobileDevice::turnOn()
+string MobileDevice::turnOn()
 {
-	if ((this->battery.getState()) > 0)
-		cout << "Turning device on..." << endl;
-	else 
-		cout << "Low battery!" << endl; 
+	if (this->isTurnedOn)
+	{
+		if ((this->battery.getState()) > 0) {
+			this->isTurnedOn = true;
+			return "W³¹czam urz¹dzenie...";
+		}else
+			return "Niski poziom baterii";
+	}else
+		return "B³¹d! Urz¹dzenie ju¿ w³¹czone!";
+	
 }
 
-void MobileDevice::turnOff()
+string MobileDevice::turnOff()
 {
-	cout << "Turning device off..." << endl;
+	if (this->isTurnedOn) {
+		this->isTurnedOn = false;
+		return "Wy³¹czam urz¹dzenie...";
+	}
+	else
+		return "B³¹d! Urz¹dzenie ju¿ wy³¹czone!";
+
 }
 
 int MobileDevice::checkBatteryState()

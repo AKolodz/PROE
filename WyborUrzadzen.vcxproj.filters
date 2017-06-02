@@ -83,6 +83,36 @@
     <ClCompile Include="GeneratedFiles\Release\moc_oknoedytora.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="MobileDevWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KomputerWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oknoedytoralaptopa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_oknoedytoralaptopa.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_oknoedytoralaptopa.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartphoneWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="oknoedytorasmartfona.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_oknoedytorasmartfona.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_oknoedytorasmartfona.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="wyborurzadzen.h">
@@ -98,6 +128,18 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="oknoedytora.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="oknoedytoralaptopa.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="oknoedytoralaptopa.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="oknoedytorasmartfona.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="oknoedytorasmartfona.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
@@ -130,6 +172,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_oknoedytora.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MobileDevWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KomputerWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_oknoedytoralaptopa.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartphoneWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_oknoedytorasmartfona.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

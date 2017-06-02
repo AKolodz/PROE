@@ -22,23 +22,29 @@ Smartphone::~Smartphone()
 #endif
 }
 
-void Smartphone::turnOn()
+string Smartphone::turnOn()
 {
-	if (battery.getState() > 0) {
-		cout << "Uruchamianie smartfona. Gotow na powiadomieniowy spam?" << endl;
+	if (this->isTurnedOn)
+	{
+		if ((this->battery.getState()) > 0) {
+			this->isTurnedOn = true;
+			return "Uruchamianie smartfona. Gotow na powiadomieniowy spam?";
+		}
+		else
+			return "Niski poziom baterii";
 	}
 	else
-		cout << "The battery is low" << endl;
+		return "B³¹d! Urz¹dzenie ju¿ w³¹czone!";
 }
 
-void Smartphone::turnOff()
+string Smartphone::turnOff()
 {
-	if (this->isTurnedOn == true) {
-		isTurnedOn = false;
-		cout << "Turning smartphone off " << endl;
+	if (this->isTurnedOn) {
+		this->isTurnedOn = false;
+		return "Uruchamianie smartfona";
 	}
 	else
-		cout << "Smartphone already turned off!" << endl;
+		return "B³¹d! Smartfon ju¿ wy³¹czony!";
 }
 
 void Smartphone::runApplication(int appIndex)

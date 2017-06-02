@@ -11,7 +11,7 @@ class OknoEdytora : public QDialog
 	Q_OBJECT
 
 public:
-	OknoEdytora(MobileDevice &mobileDevice, QWidget *parent = 0);
+	OknoEdytora(Phone &mobileDevice, QWidget *parent = 0);
 	~OknoEdytora();
 
 	public slots:
@@ -21,10 +21,12 @@ public:
 	void usunAplikacje();
 	void zapisz();
 	void wczytaj();
+	void wlacz();
+	void wylacz();
 
 private:
 	Ui::OknoEdytora ui;
-	MobileDevice* mobileDevice;
+	Phone* mobileDevice;
 };
 
 #endif // OKNOEDYTORA_H

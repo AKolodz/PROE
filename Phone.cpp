@@ -26,14 +26,29 @@ Phone::~Phone()
 #endif
 }
 
-void Phone::turnOn()
+string Phone::turnOn()
 {
-	cout << "Nokia, connecting people..." << endl;
+	if (this->isTurnedOn)
+	{
+		if ((this->battery.getState()) > 0) {
+			this->isTurnedOn = true;
+			return "Nokia, connecting people...";
+		}
+		else
+			return "Niski poziom baterii";
+	}
+	else
+		return "B³¹d! Urz¹dzenie ju¿ w³¹czone!";
 }
 
-void Phone::turnOff()
+string Phone::turnOff()
 {
-	cout << "Turning phone off" << endl; 
+	if (this->isTurnedOn) {
+		this->isTurnedOn = false;
+		return "Wy³¹czanie telefonu";
+	}
+	else
+		return "B³¹d! Telefon ju¿ wy³¹czony!";
 }
 
 void Phone::runApplication(int appIndex)

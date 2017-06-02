@@ -23,17 +23,30 @@ Laptop::~Laptop()
 #endif
 }
 
-void Laptop::turnOn()
+string Laptop::turnOn()
 {
-	if (this->battery.getState() > 0)
-		cout << "(Windows) Tu du du duuumm" << endl;
+
+	if (this->isTurnedOn)
+	{
+		if ((this->battery.getState()) > 0) {
+			this->isTurnedOn = true;
+			return "*Windows hello song*";
+		}
+		else
+			return "Niski poziom baterii";
+	}
 	else
-		cout << "Battery low" << endl;
+		return "B³¹d! Urz¹dzenie ju¿ w³¹czone!";
 }
 
-void Laptop::turnOff()
+string Laptop::turnOff()
 {
-	cout << "Closing Windows OS" << endl;
+	if (this->isTurnedOn) {
+		this->isTurnedOn = false;
+		return "Windows bye-bye song";
+	}
+	else
+		return "B³¹d! Urz¹dzenie ju¿ wy³¹czone!";
 }
 
 void Laptop::runApplication(int appIndex)

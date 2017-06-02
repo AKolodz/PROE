@@ -3,7 +3,7 @@
 #include <fstream>
 #include <iostream>
 
-OknoEdytora::OknoEdytora(MobileDevice &mobileDevice, QWidget *parent)
+OknoEdytora::OknoEdytora(Phone &mobileDevice, QWidget *parent)
 	: QDialog(parent)
 {
 	ui.setupUi(this);
@@ -20,6 +20,7 @@ OknoEdytora::~OknoEdytora()
 void OknoEdytora::uzupelnijDane() {
 	ui.producent->setText(QString::fromStdString(mobileDevice->getManufacturer()));
 	//ui.system_operacyjny->setText(QString::fromStdString(mobileDevice->MobileOperatingSystem()));
+	//TODO
 }
 
 void OknoEdytora::dodajAplikacje() {
@@ -55,6 +56,9 @@ void OknoEdytora::usunAplikacje()
 
 void OknoEdytora::zapisz()
 {
+	mobileDevice->setManufacturer(ui.producent->text().toStdString());
+
+	//TODO
 	ofstream ostream;
 	ostream.open("defaultDevice.txt");
 	mobileDevice->printTo(ostream);
@@ -76,4 +80,14 @@ void OknoEdytora::wczytaj()
 
 	uzupelnijDane();
 	wyswietlListe();
+}
+
+void OknoEdytora::wylacz()
+{
+	ui.wlaczanie_label->setText(QString::fromStdString(mobileDevice->turnOff()));
+}
+
+void OknoEdytora::wlacz()
+{
+	ui.wlaczanie_label->setText(QString::fromStdString(mobileDevice->turnOn()));
 }

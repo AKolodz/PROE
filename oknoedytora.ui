@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>930</width>
-    <height>603</height>
+    <width>961</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -98,7 +98,7 @@
       </layout>
      </item>
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="wlaczanie_label">
        <property name="text">
         <string>Włączony?</string>
        </property>
@@ -168,13 +168,6 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_8">
          <item>
-          <widget class="QLineEdit" name="kategoria_app">
-           <property name="text">
-            <string>Kategoria</string>
-           </property>
-          </widget>
-         </item>
-         <item>
           <widget class="QLineEdit" name="nazwa_app">
            <property name="text">
             <string>Nazwa</string>
@@ -189,9 +182,9 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="pamiec_app">
+          <widget class="QLineEdit" name="kategoria_app">
            <property name="text">
-            <string>Pamięć [B]</string>
+            <string>Kategoria</string>
            </property>
           </widget>
          </item>
@@ -199,6 +192,13 @@
           <widget class="QLineEdit" name="wersja_app">
            <property name="text">
             <string>Wersja</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="pamiec_app">
+           <property name="text">
+            <string>Pamięć [B]</string>
            </property>
           </widget>
          </item>
@@ -295,11 +295,28 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>wlacz</sender>
+   <signal>clicked()</signal>
+   <receiver>OknoEdytora</receiver>
+   <slot>wlacz()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>259</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>480</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>dodajAplikacje()</slot>
   <slot>usunAplikacje()</slot>
   <slot>zapisz()</slot>
   <slot>wczytaj()</slot>
+  <slot>wlacz()</slot>
  </slots>
 </ui>

@@ -6,8 +6,8 @@ class Smartphone : public Phone {
 public:
 	Smartphone();								/**< Domyslny konstruktor klasy Smartphone. Ustawia pola smartfona zgodnie z domyslnym konstruktorem klasy Phone. Ustawia pola smartfona mobileOperatingSystem = "Android", mobileInternetBrowser = "Chrome", cameraResolution = "3" MPx, isFrontCamera = "true" */
 	~Smartphone();								/**< Destruktor klasy Smartphone*/
-	void turnOn();								/**< Metoda pozwalajaca na uruchomienie urzadzenia. */
-	void turnOff();								/**< Metoda pozwalajaca na wylaczenie urzadzenia. */
+	string turnOn();								/**< Metoda pozwalajaca na uruchomienie urzadzenia. */
+	string turnOff();								/**< Metoda pozwalajaca na wylaczenie urzadzenia. */
 	void runApplication(int appIndex);			/**< Metoda uruchamiajaca dzialanie aplikacji o numerze appIndex z wektora vector<App> listOfApps */
 	void installApplication(App &application);  /**< Metoda pozwalajaca na dodanie do wektora vector<App> listOfApps aplikacji application pochodzacej z AppStore */
 	void deleteApplication(int appIndex);		/**< Metoda pozwalajaca na usuniecie z wektora vector<App> listOfApps aplikacji o numerze appIndex */

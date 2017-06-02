@@ -9,8 +9,8 @@ public:
 
 	Laptop();
 	~Laptop();
-	void turnOn();
-	void turnOff();
+	string turnOn();
+	string turnOff();
 	void runApplication(int appIndex);
 	void installApplication(App & application);
 	void deleteApplication(int appIndex);

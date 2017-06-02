@@ -12,8 +12,8 @@ public:
 	MobileDevice();											/**< Domyslny konstruktor klasy MobileDevice. Ustawia pola urzadzenia mobilnego jako weight = "0" g, price = "0" PLN, size = "0" cali, clockRate = "0" Hz, manufacturer = "1.0", isTurnedOn = "false", battery = domyslna, listOfApps = pojedynczy, domyslny element */
 	virtual ~MobileDevice();								/**< Destruktor klasy MobileDevice*/
 
-	virtual void turnOn();									/**< Metoda pozwalajaca na uruchomienie urzadzenia */
-	virtual void turnOff();									/**< Metoda pozwalajaca na wylaczenie urzadzenia */
+	virtual string turnOn();									/**< Metoda pozwalajaca na uruchomienie urzadzenia */
+	virtual string turnOff();									/**< Metoda pozwalajaca na wylaczenie urzadzenia */
 	virtual int checkBatteryState();						/**< Metoda pozwalajaca sptawdzic stan naladowania baterii urzadzenia (wyrazony w %) */
 	virtual void chargeBattery(int batteryState = 100);		/**< Metoda pozwalajaca naladowac urzadzenie */
 	virtual void runApplication(int appIndex) = 0;			/**< Metoda uruchamiajaca dzialanie aplikacji o numerze appIndex z wektora vector<App> listOfApps */

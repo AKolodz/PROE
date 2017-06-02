@@ -6,6 +6,7 @@
 #include "MobileDevice.h"
 #include "oknoedytora.h"
 #include "Phone.h"
+#include "PhoneWrapper.h"
 
 class WyborUrzadzen : public QMainWindow
 {
@@ -21,7 +22,7 @@ public:
 
 private:
 	Ui::WyborUrzadzenClass ui;
-	vector<MobileDevice*> listaUrzadzen;
+	vector<MobileDevWrapper*> wraps;
 	OknoEdytora *oknoEdytora;
 };
 
