@@ -28,7 +28,7 @@ Phone::~Phone()
 
 string Phone::turnOn()
 {
-	if (this->isTurnedOn)
+	if (!this->isTurnedOn)
 	{
 		if ((this->battery.getState()) > 0) {
 			this->isTurnedOn = true;
@@ -38,17 +38,17 @@ string Phone::turnOn()
 			return "Niski poziom baterii";
 	}
 	else
-		return "B³¹d! Urz¹dzenie ju¿ w³¹czone!";
+		return "Blad! Urzadzenie juz wlaczone!";
 }
 
 string Phone::turnOff()
 {
 	if (this->isTurnedOn) {
 		this->isTurnedOn = false;
-		return "Wy³¹czanie telefonu";
+		return "Wylaczanie telefonu";
 	}
 	else
-		return "B³¹d! Telefon ju¿ wy³¹czony!";
+		return "Blad! Telefon juz wylaczony!";
 }
 
 void Phone::runApplication(int appIndex)
@@ -79,6 +79,7 @@ void Phone::showApplicationList()
 	for (int i = 0; i < listOfApps.size(); i++)
 		cout << listOfApps[i].getName() << endl;
 }
+
 
 void Phone::addNumber( PhoneNumber &phoneNumber)
 {

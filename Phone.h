@@ -24,8 +24,8 @@ public:
 	void readFrom(istream & istream);			/**< Metoda pozwalajaca na odczytanie wartosci pol klasy ze strumienia wejsciowego istream */
 	friend ostream& operator<<(ostream &stream, Phone & phone);	/**< Operator umozliwiajacy zapisanie instancji klasy do strumienia wyjsciowego */
 	friend istream& operator>>(istream &stream, Phone &phone);	/**< Operator umozliwiajacy wczytnie parametrow instancji klasy ze strumienia wyjsciowego */
+	vector<PhoneNumber> listOfPhoneNumbers;		/**< Wektor zawierajacy liste numerow telefonow */
 
 
 protected:
-	vector<PhoneNumber> listOfPhoneNumbers;		/**< Wektor zawierajacy liste numerow telefonow */
 };

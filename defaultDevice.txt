@@ -2,32 +2,1655 @@
 0
 0
 0
-Nokia
+Cześć,
 0
 Li-ion
 0
 0
 100
-3
+232
 Games
 Snake
 Unknown
 2
 1.1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
+Other
+NoName
+Unknown
+0
+1
 Kategoria
 Nazwa
 Deweloper
 0
 0
-Kategoria
-Nazwa
-Deweloper
-0
-0
-3
-997
-Police
-998
-FireBrigade
-999
-Ambulance
+242
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name
+123 456 789
+Number's name

@@ -11,6 +11,7 @@ public:
 	~PhoneWrapper();
 	Phone* phone;
 	void pokazEdytor(QWidget *parent);
+	string przedstawSie();
 	OknoEdytora *oknoEdytora;
 
 };

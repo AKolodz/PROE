@@ -19,3 +19,8 @@ void PhoneWrapper::pokazEdytor(QWidget *parent)
 	oknoEdytora=new OknoEdytora(*phone, parent);
 	oknoEdytora->show();
 }
+
+string PhoneWrapper::przedstawSie()
+{
+	return "Telefon";
+}

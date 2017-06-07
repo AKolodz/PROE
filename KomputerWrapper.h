@@ -11,6 +11,7 @@ public:
 	KomputerWrapper(Laptop &laptop);
 	~KomputerWrapper();
 	void pokazEdytor(QWidget *parent);
+	string przedstawSie();
 	Laptop *laptop;
 	OknoEdytoraLaptopa* oknoEdytora;
 };

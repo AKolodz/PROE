@@ -10,21 +10,9 @@ WyborUrzadzen::WyborUrzadzen(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-	connect(ui.Komputer, SIGNAL(released()), this, SLOT(otworzEdytor()));
-	connect(ui.Smartfon, SIGNAL(clicked()), this, SLOT(otworzEdytor()));
-	connect(ui.Telefon, SIGNAL(clicked()), this, SLOT(otworzEdytor()));
-
-	Laptop* laptop=new Laptop();
-	Phone* phone=new Phone();
-	Smartphone* smartphone= new Smartphone();
-
-	PhoneWrapper* pWrapper = new PhoneWrapper(*phone);
-	KomputerWrapper* kWrapper = new KomputerWrapper(*laptop);
-	SmartphoneWrapper* sWrapper = new SmartphoneWrapper(*smartphone);
-
-	wraps.push_back(kWrapper);
-	wraps.push_back(pWrapper);
-	wraps.push_back(sWrapper);
+	connect(ui.Komputer, SIGNAL(clicked()), this, SLOT(dodajUrzadzenie()));
+	connect(ui.Smartfon, SIGNAL(clicked()), this, SLOT(dodajUrzadzenie()));
+	connect(ui.Telefon, SIGNAL(clicked()), this, SLOT(dodajUrzadzenie()));
 }
 
 WyborUrzadzen::~WyborUrzadzen()
@@ -37,16 +25,42 @@ void WyborUrzadzen::zamknij()
 	QApplication::exit();
 }
 
-void WyborUrzadzen::otworzEdytor()
+void WyborUrzadzen::dodajUrzadzenie()
 {
 	if (qobject_cast<QPushButton*>(sender()) == ui.Komputer) {
-		wraps[0]->pokazEdytor(this);
+		Laptop* laptop = new Laptop();
+		KomputerWrapper* komputerWrapper = new KomputerWrapper(*laptop);
+		this->wraps.push_back(komputerWrapper);
 	}
 	else if (qobject_cast<QPushButton*>(sender()) == ui.Telefon) {
-		wraps[1]->pokazEdytor(this);
+		Phone* phone = new Phone();
+		PhoneWrapper* phoneWrapper = new PhoneWrapper(*phone);
+		this->wraps.push_back(phoneWrapper);
 	}
 	else if (qobject_cast<QPushButton*>(sender()) == ui.Smartfon) {
-		wraps[2]->pokazEdytor(this);
+		Smartphone* smartphone = new Smartphone();
+		SmartphoneWrapper* smartphoneWrapper = new SmartphoneWrapper(*smartphone);
+		this->wraps.push_back(smartphoneWrapper);
 	}
-	
+	wyswietlListeUrzadzen();
+}
+
+void WyborUrzadzen::usunUrzadzenie()
+{
+	this->wraps.erase(this->wraps.begin()+ui.lista_urzadzen->currentRow());
+	wyswietlListeUrzadzen();
+}
+
+void WyborUrzadzen::wyswietlListeUrzadzen()
+{
+	ui.lista_urzadzen->clear();
+	for (int i = 0; i < this->wraps.size(); i++) {
+		QListWidgetItem *item = new QListWidgetItem(QString::fromStdString(this->wraps[i]->przedstawSie()));
+		ui.lista_urzadzen->addItem(item);
+	}
+}
+
+void WyborUrzadzen::otworzEdytor()
+{
+	this->wraps[ui.lista_urzadzen->currentRow()]->pokazEdytor(this);
 }

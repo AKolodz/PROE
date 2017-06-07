@@ -14,3 +14,8 @@ void SmartphoneWrapper::pokazEdytor(QWidget *parent)
 	oknoEdytora = new OknoEdytoraSmartfona(*smartphone, parent);
 	oknoEdytora->show();
 }
+
+string SmartphoneWrapper::przedstawSie()
+{
+	return "Smartfon";
+}

@@ -19,6 +19,9 @@ public:
 	public slots:
 	void otworzEdytor();
 	void zamknij();
+	void dodajUrzadzenie();
+	void usunUrzadzenie();
+	void wyswietlListeUrzadzen();
 
 private:
 	Ui::WyborUrzadzenClass ui;

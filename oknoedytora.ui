@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>961</width>
-    <height>600</height>
+    <width>1251</width>
+    <height>775</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,6 +32,12 @@
          </item>
          <item>
           <widget class="QLineEdit" name="producent">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
            </property>
@@ -40,44 +46,23 @@
         </layout>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QLabel" name="label_6">
-           <property name="text">
-            <string>Mobilny system operacyjny</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="system_operacyjny"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_5">
-         <item>
-          <widget class="QLabel" name="label_10">
-           <property name="text">
-            <string>System operacyjny</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_3"/>
-         </item>
-        </layout>
-       </item>
-       <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
           <widget class="QLabel" name="label_8">
            <property name="text">
-            <string>Cena</string>
+            <string>Cena [PLN]</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_4"/>
+          <widget class="QLineEdit" name="cena">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
@@ -86,19 +71,45 @@
          <item>
           <widget class="QLabel" name="label_3">
            <property name="text">
-            <string>Waga</string>
+            <string>Waga [g]</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_5"/>
+          <widget class="QLineEdit" name="waga">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
       </layout>
      </item>
      <item>
+      <widget class="QLabel" name="logo_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Ignored">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QLabel" name="wlaczanie_label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="text">
         <string>Włączony?</string>
        </property>
@@ -146,6 +157,62 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Numery telefonów</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="lista_numerow"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLineEdit" name="nazwa_num">
+           <property name="text">
+            <string>Nazwa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="numer_num">
+           <property name="text">
+            <string>Numer</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QPushButton" name="dodaj_numer">
+           <property name="text">
+            <string>Dodaj</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="usun_numer">
+           <property name="text">
+            <string>Usuń</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
         <widget class="QLabel" name="label">
          <property name="font">
           <font>
@@ -155,7 +222,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Zainstalowane Aplikacje</string>
+          <string>Zainstalowane aplikacje</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -311,6 +378,54 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>wylacz</sender>
+   <signal>clicked()</signal>
+   <receiver>OknoEdytora</receiver>
+   <slot>wylacz()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>493</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>480</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dodaj_numer</sender>
+   <signal>clicked()</signal>
+   <receiver>OknoEdytora</receiver>
+   <slot>dodajNumer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>583</x>
+     <y>353</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>usun_numer</sender>
+   <signal>clicked()</signal>
+   <receiver>OknoEdytora</receiver>
+   <slot>usunNumer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1060</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>625</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>dodajAplikacje()</slot>
@@ -318,5 +433,8 @@
   <slot>zapisz()</slot>
   <slot>wczytaj()</slot>
   <slot>wlacz()</slot>
+  <slot>wylacz()</slot>
+  <slot>dodajNumer()</slot>
+  <slot>usunNumer()</slot>
  </slots>
 </ui>

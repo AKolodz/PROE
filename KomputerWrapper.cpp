@@ -21,3 +21,8 @@ void KomputerWrapper::pokazEdytor(QWidget *parent)
 	oknoEdytora = new OknoEdytoraLaptopa(*laptop, parent);
 	oknoEdytora->show();
 }
+
+string KomputerWrapper::przedstawSie()
+{
+	return "Laptop";
+}

@@ -34,18 +34,13 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_4;
     QLineEdit *producent;
-    QHBoxLayout *horizontalLayout_3;
-    QLabel *label_6;
-    QLineEdit *system_operacyjny;
-    QHBoxLayout *horizontalLayout_5;
-    QLabel *label_10;
-    QLineEdit *lineEdit_3;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_8;
-    QLineEdit *lineEdit_4;
+    QLineEdit *cena;
     QHBoxLayout *horizontalLayout;
     QLabel *label_3;
-    QLineEdit *lineEdit_5;
+    QLineEdit *waga;
+    QLabel *logo_label;
     QLabel *wlaczanie_label;
     QHBoxLayout *horizontalLayout_6;
     QPushButton *zapisz;
@@ -54,6 +49,14 @@ public:
     QPushButton *wylacz;
     QVBoxLayout *verticalLayout_4;
     QVBoxLayout *verticalLayout;
+    QLabel *label_2;
+    QListWidget *lista_numerow;
+    QHBoxLayout *horizontalLayout_3;
+    QLineEdit *nazwa_num;
+    QLineEdit *numer_num;
+    QHBoxLayout *horizontalLayout_9;
+    QPushButton *dodaj_numer;
+    QPushButton *usun_numer;
     QLabel *label;
     QListWidget *lista_app;
     QHBoxLayout *horizontalLayout_8;
@@ -70,7 +73,7 @@ public:
     {
         if (OknoEdytora->objectName().isEmpty())
             OknoEdytora->setObjectName(QStringLiteral("OknoEdytora"));
-        OknoEdytora->resize(961, 600);
+        OknoEdytora->resize(1251, 775);
         gridLayout = new QGridLayout(OknoEdytora);
         gridLayout->setSpacing(6);
         gridLayout->setContentsMargins(11, 11, 11, 11);
@@ -92,44 +95,17 @@ public:
 
         producent = new QLineEdit(OknoEdytora);
         producent->setObjectName(QStringLiteral("producent"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(producent->sizePolicy().hasHeightForWidth());
+        producent->setSizePolicy(sizePolicy);
         producent->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
 
         horizontalLayout_2->addWidget(producent);
 
 
         verticalLayout_2->addLayout(horizontalLayout_2);
-
-        horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setSpacing(6);
-        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        label_6 = new QLabel(OknoEdytora);
-        label_6->setObjectName(QStringLiteral("label_6"));
-
-        horizontalLayout_3->addWidget(label_6);
-
-        system_operacyjny = new QLineEdit(OknoEdytora);
-        system_operacyjny->setObjectName(QStringLiteral("system_operacyjny"));
-
-        horizontalLayout_3->addWidget(system_operacyjny);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_3);
-
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setSpacing(6);
-        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
-        label_10 = new QLabel(OknoEdytora);
-        label_10->setObjectName(QStringLiteral("label_10"));
-
-        horizontalLayout_5->addWidget(label_10);
-
-        lineEdit_3 = new QLineEdit(OknoEdytora);
-        lineEdit_3->setObjectName(QStringLiteral("lineEdit_3"));
-
-        horizontalLayout_5->addWidget(lineEdit_3);
-
-
-        verticalLayout_2->addLayout(horizontalLayout_5);
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
@@ -139,10 +115,12 @@ public:
 
         horizontalLayout_4->addWidget(label_8);
 
-        lineEdit_4 = new QLineEdit(OknoEdytora);
-        lineEdit_4->setObjectName(QStringLiteral("lineEdit_4"));
+        cena = new QLineEdit(OknoEdytora);
+        cena->setObjectName(QStringLiteral("cena"));
+        sizePolicy.setHeightForWidth(cena->sizePolicy().hasHeightForWidth());
+        cena->setSizePolicy(sizePolicy);
 
-        horizontalLayout_4->addWidget(lineEdit_4);
+        horizontalLayout_4->addWidget(cena);
 
 
         verticalLayout_2->addLayout(horizontalLayout_4);
@@ -155,10 +133,12 @@ public:
 
         horizontalLayout->addWidget(label_3);
 
-        lineEdit_5 = new QLineEdit(OknoEdytora);
-        lineEdit_5->setObjectName(QStringLiteral("lineEdit_5"));
+        waga = new QLineEdit(OknoEdytora);
+        waga->setObjectName(QStringLiteral("waga"));
+        sizePolicy.setHeightForWidth(waga->sizePolicy().hasHeightForWidth());
+        waga->setSizePolicy(sizePolicy);
 
-        horizontalLayout->addWidget(lineEdit_5);
+        horizontalLayout->addWidget(waga);
 
 
         verticalLayout_2->addLayout(horizontalLayout);
@@ -166,8 +146,23 @@ public:
 
         verticalLayout_3->addLayout(verticalLayout_2);
 
+        logo_label = new QLabel(OknoEdytora);
+        logo_label->setObjectName(QStringLiteral("logo_label"));
+        QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::Ignored);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(logo_label->sizePolicy().hasHeightForWidth());
+        logo_label->setSizePolicy(sizePolicy1);
+
+        verticalLayout_3->addWidget(logo_label);
+
         wlaczanie_label = new QLabel(OknoEdytora);
         wlaczanie_label->setObjectName(QStringLiteral("wlaczanie_label"));
+        QSizePolicy sizePolicy2(QSizePolicy::MinimumExpanding, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(wlaczanie_label->sizePolicy().hasHeightForWidth());
+        wlaczanie_label->setSizePolicy(sizePolicy2);
         wlaczanie_label->setAlignment(Qt::AlignCenter);
 
         verticalLayout_3->addWidget(wlaczanie_label);
@@ -207,12 +202,56 @@ public:
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        label = new QLabel(OknoEdytora);
-        label->setObjectName(QStringLiteral("label"));
+        label_2 = new QLabel(OknoEdytora);
+        label_2->setObjectName(QStringLiteral("label_2"));
         QFont font;
         font.setPointSize(10);
         font.setBold(true);
         font.setWeight(75);
+        label_2->setFont(font);
+        label_2->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(label_2);
+
+        lista_numerow = new QListWidget(OknoEdytora);
+        lista_numerow->setObjectName(QStringLiteral("lista_numerow"));
+
+        verticalLayout->addWidget(lista_numerow);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        nazwa_num = new QLineEdit(OknoEdytora);
+        nazwa_num->setObjectName(QStringLiteral("nazwa_num"));
+
+        horizontalLayout_3->addWidget(nazwa_num);
+
+        numer_num = new QLineEdit(OknoEdytora);
+        numer_num->setObjectName(QStringLiteral("numer_num"));
+
+        horizontalLayout_3->addWidget(numer_num);
+
+
+        verticalLayout->addLayout(horizontalLayout_3);
+
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        dodaj_numer = new QPushButton(OknoEdytora);
+        dodaj_numer->setObjectName(QStringLiteral("dodaj_numer"));
+
+        horizontalLayout_9->addWidget(dodaj_numer);
+
+        usun_numer = new QPushButton(OknoEdytora);
+        usun_numer->setObjectName(QStringLiteral("usun_numer"));
+
+        horizontalLayout_9->addWidget(usun_numer);
+
+
+        verticalLayout->addLayout(horizontalLayout_9);
+
+        label = new QLabel(OknoEdytora);
+        label->setObjectName(QStringLiteral("label"));
         label->setFont(font);
         label->setAlignment(Qt::AlignCenter);
 
@@ -283,6 +322,9 @@ public:
         QObject::connect(zapisz, SIGNAL(clicked()), OknoEdytora, SLOT(zapisz()));
         QObject::connect(wczytaj, SIGNAL(clicked()), OknoEdytora, SLOT(wczytaj()));
         QObject::connect(wlacz, SIGNAL(clicked()), OknoEdytora, SLOT(wlacz()));
+        QObject::connect(wylacz, SIGNAL(clicked()), OknoEdytora, SLOT(wylacz()));
+        QObject::connect(dodaj_numer, SIGNAL(clicked()), OknoEdytora, SLOT(dodajNumer()));
+        QObject::connect(usun_numer, SIGNAL(clicked()), OknoEdytora, SLOT(usunNumer()));
 
         QMetaObject::connectSlotsByName(OknoEdytora);
     } // setupUi
@@ -291,16 +333,20 @@ public:
     {
         OknoEdytora->setWindowTitle(QApplication::translate("OknoEdytora", "OknoEdytora", Q_NULLPTR));
         label_4->setText(QApplication::translate("OknoEdytora", "Producent", Q_NULLPTR));
-        label_6->setText(QApplication::translate("OknoEdytora", "Mobilny system operacyjny", Q_NULLPTR));
-        label_10->setText(QApplication::translate("OknoEdytora", "System operacyjny", Q_NULLPTR));
-        label_8->setText(QApplication::translate("OknoEdytora", "Cena", Q_NULLPTR));
-        label_3->setText(QApplication::translate("OknoEdytora", "Waga", Q_NULLPTR));
+        label_8->setText(QApplication::translate("OknoEdytora", "Cena [PLN]", Q_NULLPTR));
+        label_3->setText(QApplication::translate("OknoEdytora", "Waga [g]", Q_NULLPTR));
+        logo_label->setText(QString());
         wlaczanie_label->setText(QApplication::translate("OknoEdytora", "W\305\202\304\205czony?", Q_NULLPTR));
         zapisz->setText(QApplication::translate("OknoEdytora", "Zapisz", Q_NULLPTR));
         wczytaj->setText(QApplication::translate("OknoEdytora", "Wczytaj", Q_NULLPTR));
         wlacz->setText(QApplication::translate("OknoEdytora", "W\305\202\304\205cz", Q_NULLPTR));
         wylacz->setText(QApplication::translate("OknoEdytora", "Wy\305\202\304\205cz", Q_NULLPTR));
-        label->setText(QApplication::translate("OknoEdytora", "Zainstalowane Aplikacje", Q_NULLPTR));
+        label_2->setText(QApplication::translate("OknoEdytora", "Numery telefon\303\263w", Q_NULLPTR));
+        nazwa_num->setText(QApplication::translate("OknoEdytora", "Nazwa", Q_NULLPTR));
+        numer_num->setText(QApplication::translate("OknoEdytora", "Numer", Q_NULLPTR));
+        dodaj_numer->setText(QApplication::translate("OknoEdytora", "Dodaj", Q_NULLPTR));
+        usun_numer->setText(QApplication::translate("OknoEdytora", "Usu\305\204", Q_NULLPTR));
+        label->setText(QApplication::translate("OknoEdytora", "Zainstalowane aplikacje", Q_NULLPTR));
         nazwa_app->setText(QApplication::translate("OknoEdytora", "Nazwa", Q_NULLPTR));
         dev_app->setText(QApplication::translate("OknoEdytora", "Deweloper", Q_NULLPTR));
         kategoria_app->setText(QApplication::translate("OknoEdytora", "Kategoria", Q_NULLPTR));

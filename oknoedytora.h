@@ -17,12 +17,15 @@ public:
 	public slots:
 	void uzupelnijDane();
 	void dodajAplikacje();
-	void wyswietlListe();
+	void wyswietlListeAplikacji();
 	void usunAplikacje();
 	void zapisz();
 	void wczytaj();
 	void wlacz();
 	void wylacz();
+	void dodajNumer();
+	void usunNumer();
+	void wyswietlListeNumerow();
 
 private:
 	Ui::OknoEdytora ui;
